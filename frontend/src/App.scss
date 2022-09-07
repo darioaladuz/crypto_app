@@ -1,0 +1,23 @@
+body {
+    // background-color: #080e2c;
+}
+
+h1 {
+    // color: #eee;
+}
+
+h2 {
+    // color: #fff;
+}
+
+@media only screen and (min-width: 1023px) {
+    .companies {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        & > div {
+            flex: 40%;
+        }
+    }
+}
