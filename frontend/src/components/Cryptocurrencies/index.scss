@@ -1,0 +1,44 @@
+.cryptocurrencies {
+    h1 {
+        margin-bottom: 16px;
+    }
+}
+
+table {
+    font-size: .875rem;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px 4px rgba(0,0,0,.15);
+
+    thead {
+        // background-color: #fff;
+        padding: 16px;
+      }
+
+    th {
+        border-bottom: 1px solid rgba(0,0,0,.5);
+    }
+    
+    td, th {
+        // border: 1px solid rgba(0,0,0,.15);
+        text-align: left;
+        padding: 16px;
+    }
+    }
+
+    tbody {
+        tr {
+
+            &:hover {
+                background-color: #eee;
+            }
+            &:not(:last-child) {
+                // background-color: #fff;
+                border-bottom: 1px solid rgba(0,0,0,.15);
+              }
+        }
+    }

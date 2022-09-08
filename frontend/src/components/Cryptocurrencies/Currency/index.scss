@@ -1,0 +1,60 @@
+.currency {
+
+    td {
+        div {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .positive {
+            position: relative;
+            color: #16c784;
+
+            &::before {
+                content: "";
+                background-color: #16c784;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                width: 24px;
+                height: 24px;
+                transform: translate(-80%, -50%);
+                -webkit-mask-image: url(./assets/up.svg);
+                mask-image: url(./assets/up.svg);
+                
+            }
+        }
+    
+        .negative {
+            position: relative;
+            color: #ea3943;
+
+            &::before {
+                content: "";
+                background-color: #ea3943;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                width: 24px;
+                height: 24px;
+                transform: translate(-80%, -50%);
+                -webkit-mask-image: url(./assets/down.svg);
+                mask-image: url(./assets/down.svg);
+                
+            }
+        }
+    }
+
+    &__icon {
+        width: 24px;
+    }
+
+    &__name {
+
+    }
+
+    &__symbol {
+        color: #555;
+    }
+}
