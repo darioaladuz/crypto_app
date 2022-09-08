@@ -11,6 +11,7 @@ import {
     BarElement
 } from 'chart.js';
 import { useEffect, useState } from "react";
+import "./index.scss";
 
 export default function Chart({ stockName, stockData }){
     ChartJS.register(
@@ -61,7 +62,7 @@ export default function Chart({ stockName, stockData }){
     }, [])
 
     return (
-        <div>
+        <div className="company">
             <h2>{stockData.Name}</h2>
             {
                 loading ? "Loading..." :

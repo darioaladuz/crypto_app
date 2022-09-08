@@ -1,14 +1,19 @@
-import Stock from "./components/Stock";
+import { Routes, Route } from "react-router-dom";
+// import components
+import Home from "./components/Home/index.jsx";
+import TopStocks from "./components/TopCompanies/index.jsx";
+// styling
 import "./App.scss";
+import Header from "./components/Header/index.jsx";
 
 export default function App() {
     return (
-        <div>
-            <h1>Stock price history Top 10 Companies</h1>
-
-            <div className="companies">
-                <Stock />
-            </div>
+        <div className="App">
+            <Header />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/top-10" element={<TopStocks />} />
+            </Routes>
         </div>
     )
 }

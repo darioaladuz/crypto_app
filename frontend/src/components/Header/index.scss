@@ -1,0 +1,19 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+
+    nav {
+        a {
+            margin-inline: 12px;
+            text-decoration: none;
+            // color: black;
+        }
+
+        a.active {
+            color: black;
+            cursor:text;
+        }
+    }
+}

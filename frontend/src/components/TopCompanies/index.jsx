@@ -1,12 +1,11 @@
-import StockHistory from "../data/stockhistory.json";
+import StockHistory from "./top10companies.json";
 import { useState, useEffect } from "react";
 import Chart from "./Chart";
+import "./index.scss";
 
-export default function Stock({ }){
+export default function TopStocks({ }){
     return (
-        <div>
-            {/* <h2>{stockData.Name}</h2> */}
-
+        <div className="page top-10">
             {
                 Object.keys(StockHistory).map((name) => {
                     return (
