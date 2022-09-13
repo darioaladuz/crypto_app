@@ -6,6 +6,7 @@ import TopStocks from "./components/TopCompanies/index.jsx";
 import "./App.scss";
 import Header from "./components/Header/index.jsx";
 import Cryptocurrencies from "./components/Cryptocurrencies/index.jsx";
+import Cryptocurrency from "./components/Cryptocurrency/index.jsx";
 
 export default function App() {
     return (
@@ -15,6 +16,7 @@ export default function App() {
                 {/* <Route path="/" element={<Home />} /> */}
                 <Route path="/" element={<Cryptocurrencies />} />
                 <Route path="/top-10" element={<TopStocks />} />
+                <Route path="cryptos/:id" element={<Cryptocurrency />} />
             </Routes>
         </div>
     )

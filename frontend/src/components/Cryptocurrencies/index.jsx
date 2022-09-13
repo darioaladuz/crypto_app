@@ -3,6 +3,7 @@ import axios from "axios";
 import Currency from "./Currency";
 import Trending from "./Trending";
 import "./index.scss";
+import CryptoSearcher from "./CryptoSearcher/index.jsx";
 
 export default function Cryptocurrencies(){
 
@@ -29,10 +30,15 @@ export default function Cryptocurrencies(){
 
     return (
         <div className="page cryptocurrencies">
-            {
-                loading ? "Loading..." :
-                <Trending coins={ coinsList } />
-            }
+            <div className="ccd">
+                {
+                    loading ? "Loading..." :
+                    <>
+                    <Trending coins={ coinsList } />
+                    <CryptoSearcher coins={ coinsList } />
+                    </>
+                }
+            </div>
             <p style={{ fontSize: ".75rem", marginBottom: "8px" }}>Powered by <a target="_blank" href="https://www.coingecko.com/en/api">CoinGecko API</a></p>
             <table>
                 <thead>

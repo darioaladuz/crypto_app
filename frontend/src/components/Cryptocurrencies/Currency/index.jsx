@@ -23,10 +23,14 @@ export default function Currency({ number, currency }) {
 
     return (
         <tr className="currency">
-            <td>{ number }</td>
+            <td><a href={`/cryptos/${currency.id}`}>{ number }</a></td>
             <td><div><img src={currency.image} className="currency__icon" /><span className="currency__name">{currency.name}</span><span className="currency__symbol">{currency.symbol.toUpperCase()}</span></div></td>
             <td>{ formatUSPrice.format(currency.current_price) }</td>
-            <td>{formatPriceChange(currency.price_change_percentage_1h_in_currency)}</td>
+            <td>{
+                currency.price_change_percentage_1h_in_currency ?
+                formatPriceChange(currency.price_change_percentage_1h_in_currency) :
+                "null"
+                }</td>
             <td>{formatPriceChange(currency.price_change_percentage_24h_in_currency)}</td>
             <td>{formatPriceChange(currency.price_change_percentage_7d_in_currency)}</td>
             <td>${formatUSPriceNoZeros.format(currency.market_cap)}</td>

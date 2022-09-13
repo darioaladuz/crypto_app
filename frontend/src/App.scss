@@ -21,6 +21,10 @@ h2 {
     padding: 32px;
 }
 
+.currency__symbol {
+    color: #777 !important;
+}
+
 @media only screen and (min-width: 1023px) {
     .companies {
         display: flex;

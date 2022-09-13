@@ -1,0 +1,61 @@
+.cryptosearcher {
+    flex: 1;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px 4px rgba(0,0,0,.15);
+    padding: 16px 24px;
+    align-self: start;
+
+    .search-bar {
+        position: relative;
+        max-width: 260px;
+        input {
+            height: 20px;
+            padding: 12px 20px;
+            width: 100%;
+        }
+
+        .filtered-coins {
+            position: absolute;
+            left: 0;
+            top: 32px;
+            list-style: none;
+            border: 1px solid rgba(0,0,0,.25);
+            padding: 12px;
+            background-color: white;
+            width: 100%;
+
+            li {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                background-color: white;
+                padding: 8px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #eee;
+                }
+
+                img {
+                    width: 24px;
+                }
+            }
+        }
+    }
+}
+
+.coin-info {
+    padding: 12px;
+    div {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+        img {
+            width: 24px;
+            height: 24px;
+            object-fit: cover;
+        }
+    }
+}

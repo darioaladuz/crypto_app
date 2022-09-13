@@ -1,4 +1,5 @@
-import { Bar, Line } from "react-chartjs-2";
+import { useEffect, useState } from "react";
+import { Line } from "react-chartjs-2";
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -10,7 +11,6 @@ import {
     Legend,
     BarElement
 } from 'chart.js';
-import { useEffect, useState } from "react";
 import "./index.scss";
 
 export default function Chart({ stockName, stockData }){

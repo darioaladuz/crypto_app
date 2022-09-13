@@ -26,7 +26,7 @@ export default function TrendingCoin({ number, coin, coins }){
             <span> </span>
             <img style={{width: "24px"}} src={coin.item.large} alt="" />
             <span>{coin.item.name}</span>
-            <span>{coin.item.symbol}</span>
+            <span className="currency__symbol">{coin.item.symbol}</span>
         </div>
     )
 }
