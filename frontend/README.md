@@ -1,4 +1,4 @@
-# Crypto
+# Crypto (initially just stock market, but expanded)
 
 A web app to display live crypto data and also stock market history for the TOP 10 companies between 2017 and 2022.
 
