@@ -4,7 +4,7 @@ import "./index.scss";
 export default function Header(){
     return (
         <header>
-            <h1>STOCKS</h1>
+            <h1>CRYPTO</h1>
 
             <nav>
                 {/* <NavLink exact="true" activeclassname="active" className="navlink home-link" to="/">
