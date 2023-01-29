@@ -8,7 +8,7 @@ A web app to display live crypto data and also stock market history for the TOP 
 
 Clone the repository on your local machine.
 
-Go into the new directory (most likely its name will be crypto)
+Go into the new directory (most likely its name will be crypto or crypto_app)
 
 Run npm install and then npm run dev (if this doesn't work, search for the command to start the project on package.json)
 
@@ -19,7 +19,7 @@ Run npm install and then npm run dev (if this doesn't work, search for the comma
 
 ## About the author
 
-I'm [Dario Aladuz](https://github.com/darioaladuz), a Full Stack Web Developer. I've been programming for more than 3 years now and currently working on personal projects, and looking for a job position.
+I'm [Dario Aladuz](https://github.com/darioaladuz), a Full Stack Web Developer. I've been programming for more than 3 years now and currently working at ExoClick.
 
 ### License
 
